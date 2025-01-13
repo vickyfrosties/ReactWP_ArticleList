@@ -1,4 +1,5 @@
 import Article from "./components/Article/Article";
+import ArticleSkeleton from "./components/Article/ArticleSkeleton";
 
 function App() {
 
@@ -24,6 +25,8 @@ function App() {
         resume="This is a test"
         date={new Date(2025, 0, 13)}
       />
+
+      <ArticleSkeleton />
     </>
   );
 }

@@ -21,3 +21,24 @@
     }
 
 }
+
+.articleSkeleton {
+
+    div {
+        min-height: 1em;
+        background-color: rgb(56, 166, 209);
+    }
+
+    div:nth-child(1) {
+        width: 10em;
+    }
+
+    div:nth-child(2) {
+        width: 5em;
+    }
+
+    div:nth-child(3) {
+        width: 100%;
+        min-height: 2em;
+    }
+}
