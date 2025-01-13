@@ -1,3 +1,4 @@
+import style from "./Article.module.scss";
 
 type ArticleProps = {
     title: string;
@@ -17,10 +18,12 @@ const Article = ({ title, date, resume }: ArticleProps) => {
 
 
     return (
-        <div>
+        <div className={style.article}>
             <h3>{title}</h3>
             <p>{isToday ? "Aujourd\hui" : renderDate}</p>
-            <p>{resume}</p>
+            <div>
+                {resume}
+            </div>
         </div>
     );
 };
